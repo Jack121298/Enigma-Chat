@@ -25,10 +25,10 @@ public class Main
         System.out.println("Enter Name: ");
         //save name to a local variable called 'name'
         String name = sc.nextLine();
-        //open socket on local host ip and at port 1000 and 1001
+        //open socket on local host ip and at port 49150 and 49151
         //2 sockets for 2 data streams and easy differentiation of these streams. Message socket for messages, settings socket for moving a data
-        Socket messageSocket = new Socket("localhost", 1000);
-        Socket settingSocket = new Socket("localhost", 1001);
+        Socket messageSocket = new Socket("localhost", 49150);
+        Socket settingSocket = new Socket("localhost", 49151);
 
         //New client instance, with sockets and name variable passed in
         Client client = new Client(messageSocket, settingSocket, name);

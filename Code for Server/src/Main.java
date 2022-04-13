@@ -19,8 +19,8 @@ public class Main
         //Two ports for two different types of data.
         //Learnt a lot about network programming and this is one of the ways I could differentiate between the two different data sets
         //Ran on two different ports as I was having issues with the same port. Need to learn more about this
-        ServerSocket messageSocket = new ServerSocket(1000);//1000 port
-        ServerSocket settingSocket = new ServerSocket(1001);//1001 port
+        ServerSocket messageSocket = new ServerSocket(49150);//49150 port
+        ServerSocket settingSocket = new ServerSocket(49151);//49151 port
         //New Server class with both sockets as input
         Server myServer = new Server(messageSocket, settingSocket);
         //Server run command
